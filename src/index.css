@@ -48,6 +48,7 @@ font-family: 'Work Sans', sans-serif;
   cursor:pointer;
   border: none;
   position:relative;
+  color:white;
 }
 
 .btnRight{
@@ -56,4 +57,19 @@ font-family: 'Work Sans', sans-serif;
   cursor:pointer;
   border: none;
   position:relative;
+color:'white';
+
 }
+
+.btnRight span{
+font-family: 'Work Sans', sans-serif;
+font-size: 1.5rem;
+color:white;
+}
+
+.containerbtnLeft .btnLeft span{
+  color: 'white';
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5rem;
+}
+

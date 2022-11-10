@@ -12,10 +12,10 @@ preset="night"
 resolution={32}
 >
  <color args={['#000']} attach='background'/>
- <Lightformer position-y={4} position-z={6} 
+ <Lightformer position-y={4} position-z={4} 
  scale={10}
  color="white"
- intensity={1.5}
+ intensity={2}
  form='ring' 
 />
 </Environment>
@@ -24,8 +24,8 @@ resolution={32}
 
 <directionalLight 
 castShadow
-            position={ [ 1, 1, 6 ] }
-            intensity={1.5 }
+            position={ [ 1, 1, 4 ] }
+            intensity={1 }
             shadow-mapSize={ [ 1024, 1024 ] }
             shadow-camera-near={ 1 }
             shadow-camera-far={ 10 }
