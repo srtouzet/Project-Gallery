@@ -55,6 +55,7 @@ if(CameraPers.current.position.z === 100 && CameraPers.current.position.x === 0)
   }) 
   gallery.current.style.display = 'block'
   galleryExitRef.current.style.display = 'none'
+  cloudRef.current.style.display = 'none'
 }
 }
 
