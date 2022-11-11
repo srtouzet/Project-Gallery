@@ -73,3 +73,25 @@ color:white;
   font-size: 1.5rem;
 }
 
+.containerbtnExitGalery{
+  width: 200px;
+  top: 13rem;
+  right: 4.5rem;
+  position: relative;
+  border: none;
+}
+.btnExitGallery {
+  padding: 1rem;
+  display: none;
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5rem;
+  transition: 2s all;
+}
+
+.btnExitGallery:hover{
+  
+  border: 1px solid white;
+}

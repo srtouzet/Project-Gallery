@@ -3,6 +3,7 @@ import {useLoader} from '@react-three/fiber'
 import gsap from 'gsap'
 import { useRef } from 'react'
 import * as THREE from 'three'
+import { Camera } from 'three'
 import clouds from './ImagesGallery/clouds.jpg'
 import Horse from './ImagesGallery/Horse.jpg'
 import Person from './ImagesGallery/Person.jpg'
@@ -26,6 +27,7 @@ const WalkingRef = useRef();
 const CameraPers = useRef()
 
 const gallery = useRef()
+const galleryExitRef = useRef()
 
 const viewGallery = (e) => {
 e.stopPropagation()
@@ -38,9 +40,23 @@ e.stopPropagation()
        })
        cloudRef.current.style.display = 'flex'
        gallery.current.style.display = 'none'
+       galleryExitRef.current.style.display = 'block'
     }
 
 } 
+const exitGallery = (e) => {
+e.stopPropagation()
+
+if(CameraPers.current.position.z === 100 && CameraPers.current.position.x === 0){
+  gsap.to(CameraPers.current.position,{
+    duration:4,
+    z: 150,
+    ease: 'ease-in-out'
+  }) 
+  gallery.current.style.display = 'block'
+  galleryExitRef.current.style.display = 'none'
+}
+}
 
 const LeftGallery = (e) => {
   e.stopPropagation();
@@ -144,8 +160,13 @@ return <>
 
 <Html  >
         <div class="contenedor">
-        <button ref={gallery} class="btnGallery" onClick={viewGallery}><a>Ver galeria</a></button>
+        <button ref={gallery} class="btnGallery" onClick={viewGallery}><a>View Gallery</a></button>
         </div>
+
+        <div className='containerbtnExitGalery'>
+          <button class="btnExitGallery" onClick={exitGallery} ref={galleryExitRef}>Exit Gallery</button>
+        </div>
+
     </Html>
    
     <Center>
