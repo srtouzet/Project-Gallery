@@ -49,6 +49,7 @@ font-family: 'Work Sans', sans-serif;
   border: none;
   position:relative;
   color:white;
+
 }
 
 .btnRight{
@@ -58,7 +59,6 @@ font-family: 'Work Sans', sans-serif;
   border: none;
   position:relative;
 color:'white';
-
 }
 
 .btnRight span{
@@ -95,3 +95,65 @@ color:white;
   
   border: 1px solid white;
 }
+.circle{
+  background: rgba(0, 0, 0, 0.265);
+  width:3.5rem;
+  height: 3.5rem;
+  border-radius: 100%;
+  margin-left:4.5rem;
+  bottom:4.5rem;
+  position:relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+.circle p{
+  font-family: 'Work Sans',sans-serif;
+}
+
+.infoContainer{
+  display: none;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(14, 14, 14, 0.379);
+  position:relative;
+  bottom: 15rem;
+  right: 11rem;
+  color: white;
+  transition: 2s all;
+
+}
+
+.containerCross {
+  /* display: flex; */
+  /* align-items: left; */
+  top:0;
+  right: 0;
+  position: absolute;
+}
+.containerCross .cross{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  margin: 1rem;
+  
+}
+.containerImg{
+  width: 100%;
+  height: 100%;
+  padding-top: 1rem;
+
+}
+.containerImg img{
+  width: 200px;
+  height: 200px;
+}
+
