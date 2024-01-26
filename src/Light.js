@@ -8,7 +8,7 @@ export const Lights = () => {
 return <>
 
 <Environment
-preset="night"
+// preset="city"
 resolution={32}
 >
  <color args={['#000']} attach='background'/>
